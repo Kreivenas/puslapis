@@ -2,38 +2,55 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Žvakės</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <header class="yellow-header">
+  <header class="yellow-header right-align">
     <h1 id="company-name">Zvakes</h1>
-  </header>
+    <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="main-menu" class="right-align">
+      <ul>
+        <li><a href="#about-section">Apie Mus</a></li>
+        <li><a href="#dekoratyvines-zvakes-section">Dekoratyvinės žvakės</a></li>
+        <li><a href="#kapu-zvakes-section">Kapų žvakės</a></li>
+        <li><a href="#kvapnios-zvakes-section">Kvapnios žvakės</a></li>
+      </ul>
+    </nav>
+  </header>  
   <main>
-    <section>
+    <section id="about-section">
       <h2>Apie mus</h2>
       <p>Esame kompanija, kuri gamina kokybiškas ir kvapnias žvakes.</p>
     </section>
     <section id="product-section">
       <h2 class="centered">Mūsų produktai</h2>
+    </section>
       <div class="gallery">
         <div class="product">
-          <h3>Dekoratyvinės žvakės</h3>
+          <section id="dekoratyvines-zvakes-section">
+            <h2 class="centered">Dekoratyvinės žvakės</h2>
           <img src="./assets/Dekoratyvines-zvakes (1).jpg" alt="Nuotrauka 1" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
           <img src="./assets/dekoratyvines-zvakes.jpg" alt="Nuotrauka 2" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
           <img src="./assets/Žvakė-Cilindras-100.150-su-dekupažu-pakuota.jpg" alt="Nuotrauka 3" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+          </section>
+
         </div>
         <div class="product">
-          <h3>Kapų žvakės</h3>
+          <section id="kapu-zvakes-section">
+            <h2 class="centered">Kapų žvakės</h2>
           <img src="./assets/kapu zvake.jpg" alt="Nuotrauka 4" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
           <img src="./assets/ZLOTO.jpg" alt="Nuotrauka 5" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
           <img src="./assets/kapu.jpg" alt="Nuotrauka 6" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        </section>
+
         </div>
         <div class="product">
-          <h3>Kvapnios žvakės</h3>
+          <section id="kvapnios-zvakes-section">
+            <h2 class="centered">Kvapnios žvakės</h2>
           <img src="./assets/kvapni.jpg" alt="Nuotrauka 7" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
           <img src="./assets/kvapni2.jpg" alt="Nuotrauka 8" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
           <img src="./assets/kvapni3.jpg" alt="Nuotrauka 9" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+          </section>
         </div>
       </div>
     </section>

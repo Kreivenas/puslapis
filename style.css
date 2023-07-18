@@ -66,6 +66,53 @@ h2 {
     justify-content: space-between;
     align-items: center;
   }
+
+  /* style.css */
+
+/* style.css */
+
+/* Prieš tai esantis kodas išliko nepakeistas */
+
+.right-align {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#main-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-menu li {
+  margin: 5px 0;
+}
+
+#main-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#menu-toggle {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* ... Po to esantis kodas išliko nepakeistas ... */
+
   
   /* #footer-text {
     text-align: right;
