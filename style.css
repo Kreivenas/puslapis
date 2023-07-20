@@ -1,80 +1,30 @@
-.yellow-header {
-    background-color: yellow;
-    padding: 20px;
-    background-image: url(./assets/gamyba.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  #company-name {
-    font-size: 24px;
-    color: #0bd0f3;
-    margin: 0;
-  }
-  body {
-    background-image: url(./assets/images.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-h2 {
-    font-size: 20px;
-    color: #555;
-    text-align: center;
-  }
-  
-  
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .product {
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  img {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 5px;
-  }
-  
-  .zoomed {
-    transform: scale(1.2);
-    transition: transform 0.3s;
-  }
-
-  p {
-    text-align: center;
-    font-size: 14px;
-  }
-
-  .black-footer {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* style.css */
-
 /* style.css */
 
-/* Prieš tai esantis kodas išliko nepakeistas */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(./assets/images.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Header */
+
+.yellow-header {
+  background-color: yellow;
+  padding: 20px;
+  background-image: url(./assets/gamyba.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#company-name {
+  font-size: 24px;
+  color: #0bd0f3;
+  margin: 0;
+  text-align: center;
+}
 
 .right-align {
   display: flex;
@@ -114,9 +64,66 @@ h2 {
   cursor: pointer;
 }
 
-/* ... Po to esantis kodas išliko nepakeistas ... */
+/* Main Content */
 
-  
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px;
+}
+
+.image-container img {
+  max-width: 80%;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  white-space: wrap; /* Užkertame kelią aprašymui peršokti į kitą eilutę */
+}
+
+/* Footer */
+
 .black-footer {
   background-color: black;
   color: white;
@@ -127,14 +134,7 @@ h2 {
   width: 100%;
 }
 
-/* Stiliai skirti nuotraukos aprašymui */
-.image-container {
-  display: flex;
-  align-items: center;
-  text-align: left; /* Centruojame tekstą */
-  margin: 10px; /* Paliekame atstumą nuo nuotraukos */
-}
-
-.description {
-  margin-left: 10px; /* Paliekame atstumą nuo nuotraukos */
+p {
+  text-align: center;
+  font-size: 14px;
 }

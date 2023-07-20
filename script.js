@@ -1,10 +1,9 @@
 // Keičiame kompanijos pavadinimą
-// Keičiame kompanijos pavadinimą
 const companyNameElement = document.getElementById('company-name');
 companyNameElement.textContent = 'Žvakės';
 
 const footerTextElement = document.getElementById('footer-text');
-footerTextElement.textContent = 'Puslapį kūrė Tomas Kreivenas ';
+footerTextElement.textContent = 'Puslapį kūrė Tomas Kreivenas';
 
 const copyrightElement = document.getElementById('copyright');
 const currentYear = new Date().getFullYear();
@@ -19,7 +18,17 @@ function zoomOut(image) {
   image.classList.remove('zoomed');
 }
 
-// script.js
+function combineImageAndDescription() {
+  const imageWithDescriptions = document.querySelectorAll('.image-with-description');
+  imageWithDescriptions.forEach(imageWithDescription => {
+    const image = imageWithDescription.querySelector('img');
+    const description = imageWithDescription.querySelector('.description');
+    imageWithDescription.innerHTML = `<div class="image-container">${image.outerHTML}${description.outerHTML}</div>`;
+  });
+}
+
+// Iškviečiame funkciją, kad aprašymai būtų apjungti su nuotraukomis
+combineImageAndDescription();
 
 function toggleMenu() {
   const mainMenu = document.getElementById("main-menu");
@@ -40,17 +49,4 @@ document.addEventListener("click", function (event) {
   if (event.target !== mainMenu && event.target !== menuToggle) {
     mainMenu.style.display = "none";
   }
-
-  function combineImageAndDescription() {
-    const imageWithDescriptions = document.querySelectorAll('.image-with-description');
-    imageWithDescriptions.forEach(imageWithDescription => {
-      const image = imageWithDescription.querySelector('img');
-      const description = imageWithDescription.querySelector('.description');
-      imageWithDescription.innerHTML = `<div class="image-container">${image.outerHTML}${description.outerHTML}</div>`;
-    });
-  }
-
-  // Iškviečiame funkciją, kad aprašymai būtų apjungti su nuotraukomis
-  combineImageAndDescription();
 });
-
