@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Zvakes.lt - Apie Mus</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="yellow-header right-align">
+    <h1 id="company-name">Zvakes</h1>
+    <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="main-menu" class="right-align">
+      <ul>
+        <li><a href="index.html">Žvakės</a></li>
+        <li><a href="Apiemus.html">Apie Mus</a></li>
+        <li><a href="Dekoratyvines.html">Dekoratyvinės žvakės</a></li>
+        <li><a href="#kapu-zvakes-section">Kapų žvakės</a></li>
+        <li><a href="#kvapnios-zvakes-section">Kvapnios žvakės</a></li>
+      </ul>
+    </nav>
+  </header>  
+  <main>
+<div class="gallery">
+  <div class="product">
+    <section id="dekoratyvines-zvakes-section">
+      <h2 class="centered">Dekoratyvinės žvakės</h2>
+      <div class="image-with-description">
+        <img src="./assets/Dekoratyvines-zvakes (1).jpg" alt="Nuotrauka 1" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <div class="description">Aprašymas 1</div>
+      </div>
+
+      <div class="image-with-description">
+        <img src="./assets/dekoratyvines-zvakes.jpg" alt="Nuotrauka 2" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <div class="description">Aprašymas 2</div>
+      </div>
+
+      <div class="image-with-description">
+        <img src="./assets/Žvakė-Cilindras-100.150-su-dekupažu-pakuota.jpg" alt="Nuotrauka 3" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <div class="description">Aprašymas 3</div>
+      </div>
+    </section>
+  </div>
+</div>
+  </main>
+  <footer class="black-footer" id="footer">
+    <div id="copyright">
+      © 2023 Zvakes.lt
+    </div>
+    <div id="footer-text">
+      Visos teisės saugomos.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

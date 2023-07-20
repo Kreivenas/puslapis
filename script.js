@@ -40,5 +40,17 @@ document.addEventListener("click", function (event) {
   if (event.target !== mainMenu && event.target !== menuToggle) {
     mainMenu.style.display = "none";
   }
+
+  function combineImageAndDescription() {
+    const imageWithDescriptions = document.querySelectorAll('.image-with-description');
+    imageWithDescriptions.forEach(imageWithDescription => {
+      const image = imageWithDescription.querySelector('img');
+      const description = imageWithDescription.querySelector('.description');
+      imageWithDescription.innerHTML = `<div class="image-container">${image.outerHTML}${description.outerHTML}</div>`;
+    });
+  }
+
+  // Iškviečiame funkciją, kad aprašymai būtų apjungti su nuotraukomis
+  combineImageAndDescription();
 });
 

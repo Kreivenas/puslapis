@@ -1,11 +1,14 @@
 .yellow-header {
     background-color: yellow;
     padding: 20px;
+    background-image: url(./assets/gamyba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   #company-name {
     font-size: 24px;
-    color: #333;
+    color: #0bd0f3;
     margin: 0;
   }
   body {
@@ -114,14 +117,24 @@ h2 {
 /* ... Po to esantis kodas išliko nepakeistas ... */
 
   
-  /* #footer-text {
-    text-align: right;
-    margin: auto;
-  }
-  
-  #footer-text,
-  #copyright {
-    flex: 1;
-    text-align: left;
-  }
-   */
+.black-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Stiliai skirti nuotraukos aprašymui */
+.image-container {
+  display: flex;
+  align-items: center;
+  text-align: left; /* Centruojame tekstą */
+  margin: 10px; /* Paliekame atstumą nuo nuotraukos */
+}
+
+.description {
+  margin-left: 10px; /* Paliekame atstumą nuo nuotraukos */
+}
