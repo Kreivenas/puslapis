@@ -108,8 +108,13 @@ img {
   height: 200px;
   margin-bottom: 5px;
   transition: transform 0.3s; /* Pridedame pereinamąjį efektą transformacijai */
-
 }
+
+.image-with-description img {
+  width: 200px; /* Nurodykite norimą paveikslėlių plotį */
+  height: 200px; /* Nurodykite norimą paveikslėlių aukštį */
+}
+
 img:hover {
   transform: scale(1.2);
   }
